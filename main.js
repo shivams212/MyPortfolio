@@ -1,6 +1,6 @@
-/*Toggle icon navbar */
+/*=======toggle icon navbar================*/
 
-let newIcon = document.querySelector('#menu-icon');
+let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
@@ -15,13 +15,13 @@ let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
-        let top =  window.scrollY;
+        let top = window.scrollY;
         let offset = sec.offsetTop - 150;
-        let height =  sec.offsetHeight;
-        let id =  sec.getAttribute('id');
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-        if(top >- offset && top <offset +height) {
-            navLinks.forEach.apply(links => {
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
@@ -36,5 +36,27 @@ window.onscroll = () => {
     /*Remove toggle icon and navbar */
 
     menuIcon.classList.remove('fa-xmark');
-    navbar.classList
-}
+    navbar.classList.remove('active');
+};
+
+    /*Scroll reveal */
+
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+ });
+
+ ScrollReveal().reveal('.home-content ,heading', { origin: 'top' });
+ ScrollReveal().reveal('.home-img, .project-container, .portfolio-box, .contact form', { origin: 'buttom' });
+ ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
+ ScrollReveal().reveal('.home-contact p, .about-contact', { origin: 'right' });
+
+ /*typed js */
+
+ const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Web Designer' ,'Problem Solver','Learner'],
+    typeSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+ });

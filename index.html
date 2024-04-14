@@ -10,11 +10,12 @@
     <!--MAIN CSS-->
     <link rel="stylesheet" href="style.css">
     <title>Responsive Personal Website Design</title>
+    <link rel="icon" type="image/x-icon" href="profilePic.jpg">
 </head>
 <body>
     <!--HEADER DESIGN-->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Shivam</a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -22,9 +23,11 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#skill">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        
     </header>
 
     <!--HOME DESIGN SECTION-->
@@ -32,8 +35,10 @@
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>Shivam </h1>
-            <h3>And I am a <span>Frontend Developer</span></h3>
-            <p>I am Shivam,4th year Computer Science student at SRM Institute of Science and Technology, passionate about software engineering. Eager for new experiences, a quick learner in pursuit of impactful practical opportunities. To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.</p>
+            <h3>And I am a <span class="multiple-text">Frontend Developer</span></h3>
+            <p>I'm a final-year SRM Institute of Science and Technology computer science student that is very interested about software engineering. An enthusiastic traveler who picks things up quickly and is looking for possibilities that will have a real practical effect. to acquire a tough job at a respectable company so I may increase my knowledge, abilities, and learnings.   
+
+            </p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/shivams212/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/shivams212"><i class="fa-brands fa-github"></i></a>
@@ -95,7 +100,7 @@
     </section>
 
     <!-- PORTFOLIO DESIGN SECTION -->
-    <section class="portfolio" id="portfolio" >
+    <!-- <section class="portfolio" id="portfolio" >
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
@@ -144,25 +149,42 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- MY SKILLS DESIGN SECTION -->
+
+    <section class="skill" id="skill">
+       
+        
+            
+
     </section>
 
     <!-- CONTACT DESIGN SECTION -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="https://submit-form.com/032xFSbos">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email Address">
+            <input type="text" id="name" name="name" placeholder="Name" required="" />
+            <input type="email" id="email" name="email" placeholder="Email" required="" />
             </div>
 
-            <div class="input-box">
+            <!-- <div class="input-box">
                 <input type="number" placeholder="Mobile Number">
                 <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            </div> -->
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="10"
+              cols="20"
+              required=""
+            ></textarea>          
+             <button type="submit" class="btn" value="Send Message">Send Message</button>
         </form>
+
     </section>
     <!-- FOOTER DESIGN SECTION -->
 
@@ -176,7 +198,12 @@
         </div>
     </footer>
 
-    
+    <!--SCROLL REVEAL JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--TYPED JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 
     <!--MAIN JS-->
 
